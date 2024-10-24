@@ -69,8 +69,10 @@
 				"mgmcdermott.vscode-language-babel",
 				"RobbOwen.synthwave-vscode",
 				"AnbuselvanRocky.bootstrap5-vscode",
-				"vscode-icons-team.vscode-icons",
-				"batisteo.vscode-django"
+				"batisteo.vscode-django",
+				"equinusocio.vsc-material-theme-icons",
+				"tal7aouy.icons",
+				"miguelsolorio.fluent-icons"
 			]
 		}
 	}
