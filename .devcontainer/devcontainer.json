@@ -70,7 +70,9 @@
 				"RobbOwen.synthwave-vscode",
 				"AnbuselvanRocky.bootstrap5-vscode",
 				"batisteo.vscode-django",
-				"equinusocio.vsc-material-theme-icons"
+				"equinusocio.vsc-material-theme-icons",
+				"tal7aouy.icons",
+				"miguelsolorio.fluent-icons"
 			]
 		}
 	}
