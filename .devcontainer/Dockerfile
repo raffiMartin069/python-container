@@ -5,3 +5,5 @@ RUN apt-get update && apt-get upgrade -y && \
     apt-get install postgresql-common -y && \
     /usr/share/postgresql-common/pgdg/apt.postgresql.org.sh -y && \
     apt-get clean
+
+

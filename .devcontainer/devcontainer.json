@@ -68,7 +68,9 @@
 				"pranaygp.vscode-css-peek",
 				"mgmcdermott.vscode-language-babel",
 				"RobbOwen.synthwave-vscode",
-				"AnbuselvanRocky.bootstrap5-vscode"
+				"AnbuselvanRocky.bootstrap5-vscode",
+				"batisteo.vscode-django",
+				"equinusocio.vsc-material-theme-icons"
 			]
 		}
 	}
