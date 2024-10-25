@@ -17,9 +17,12 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
+from authentication.views import LoginView
 from myproject.api_version import API_VERSION
+from django.views.generic import TemplateView
 
 urlpatterns = [
-    path(f"{API_VERSION}/auth", include("authentication.urls")),
+    path("", TemplateView.as_view(template_name="login.html"), name="login"),
+    path(f"{API_VERSION}/auth/", LoginView.as_view()),
     path("admin/", admin.site.urls),
 ]

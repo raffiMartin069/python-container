@@ -1,8 +1,7 @@
 from django.urls import path
 from myproject.api_version import API_VERSION
-
-from . import views
+from django.views.generic import TemplateView
 
 urlpatterns = [
-    path(f'{API_VERSION}/auth', views.index, name="index"),
+    path(f'{API_VERSION}/auth/', TemplateView.as_view(template_name = 'login.html')),
 ]

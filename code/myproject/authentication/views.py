@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.views.generic import TemplateView
 
-def index():
-    return render()
+class LoginView(TemplateView):
+    
+    template_name = 'login.html'
