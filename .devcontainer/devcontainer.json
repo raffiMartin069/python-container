@@ -70,9 +70,10 @@
 				"RobbOwen.synthwave-vscode",
 				"AnbuselvanRocky.bootstrap5-vscode",
 				"batisteo.vscode-django",
-				"equinusocio.vsc-material-theme-icons",
-				"tal7aouy.icons",
-				"miguelsolorio.fluent-icons"
+				"Zignd.html-css-class-completion",
+				"PKief.material-icon-theme",
+				"hossaini.bootstrap-intellisense",
+				"ms-vscode.vscode-typescript-next"
 			]
 		}
 	}
