@@ -1,9 +1,5 @@
 {% load static %}
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -11,14 +7,64 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
     </head>
     <body>
+        
+        <style>
+            @media only screen and (min-width:768px) {
+                #login_form {
+                    width: 50% !important;
+                    margin: auto;
+                }
+            }
 
-        <div>
-            Hello World From Django Templates!!
-        </div>
-        <p id="message"></p>
+            @media only screen and (min-width:1024px) {
+                #login_form {
+                    width: 25% !important;
+                    margin: auto;
+                    padding: 5rem !important;
+                }
+            }
+        
+        </style>
+
+        <section class="border border-danger overflow-x-auto vh-100 justify-content-center align-content-center">
+            
+            <form id="login_form" class="p-3 shadow-sm w-auto" method="post">
+            
+                {% csrf_token %}
+                <div class="form-outline mb-4">
+                    {{ form.email.label_tag }}
+                    {{ form.email }}
+                </div>
+            
+            
+                <div class="form-outline mb-4">
+                    {{ form.password.label_tag }}
+                    {{ form.password }}
+                </div>
+            
+                <div class="row mb-4">
+                  <div class="col d-flex justify-content-center">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="show_password" />
+                      <label class="form-check-label" for="show_password"> Show Password </label>
+                    </div>
+                  </div>
+            
+                  <div class="col">
+                    <a href="#!">Forgot password?</a>
+                  </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block mb-4 w-100">Sign in</button>
+            
+                <div class="text-center">
+                  <p>Not a member? <a href="#!">Register</a></p>
+                </div>
+              </form>
+
+        </section>
         
         <script src="{% static 'bundle.js' %}"></script>
     </body>
