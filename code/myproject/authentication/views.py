@@ -31,6 +31,14 @@ class SignUpView(FormView):
     success_url = reverse_lazy('success_url')
 
     def form_valid(self, form):
-        email = form.cleaned_data['email']
-        password = form.cleaned_data['password']
+
+        is_password_matched = form.password_match()
+        print(is_password_matched)
+        if not is_password_matched:
+            return self.form_invalid(form)
+
         return super().form_valid(form)
+    
+    def form_invalid(self, form):
+        print(form.errors)
+        return super().form_invalid(form)
