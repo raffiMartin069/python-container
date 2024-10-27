@@ -73,7 +73,8 @@
 				"Zignd.html-css-class-completion",
 				"PKief.material-icon-theme",
 				"hossaini.bootstrap-intellisense",
-				"ms-vscode.vscode-typescript-next"
+				"ms-vscode.vscode-typescript-next",
+				"esbenp.prettier-vscode"
 			]
 		}
 	}
