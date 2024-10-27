@@ -1,9 +1,12 @@
 const path = require('path');
 
 module.exports = {
-    entry: ['./assets/scripts/index.js'],
+    entry: {
+      main: ['./assets/scripts/index.js'],  
+      signup: ['./assets/scripts/signup.bundle.js'],
+    }, 
     output: {
-      filename: 'bundle.js',
+      filename: '[name].bundle.js',
       path: path.resolve(__dirname, '../authentication/', 'static'),
     },
     module: {
