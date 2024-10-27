@@ -37,11 +37,16 @@
                     {{ form.email.label_tag }}
                     {{ form.email }}
                 </div>
-            
-            
+
                 <div class="form-outline mb-4">
                     {{ form.password.label_tag }}
                     {{ form.password }}
+                
+                    {% if form.non_field_errors %}
+                      {% for error in form.non_field_errors %}
+                        <small class="text-danger">{{ error }}</small>
+                      {% endfor %}
+                    {% endif %}
                 </div>
             
                 <div class="row mb-4">
@@ -66,6 +71,6 @@
 
         </section>
         
-        <script src="{% static 'bundle.js' %}"></script>
+        <script src="{% static 'main.bundle.js' %}"></script>
     </body>
 </html>
